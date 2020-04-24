@@ -721,18 +721,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'In a cubelike galaxy on a cubelike planet a cube suddenly spurs in motion.
+  m_Text: 'In a land far away a terrible war rages.
 
-    It
-    finds itself running down a steep slope. And without arms, legs or any other
-    limbs our little cube has no means of stopping.
+    Tsun, a ninja from the Treena
+    clan, recieves a divine message that his family is in danger.
 
-    (he can hop and steer though,
-    wich is a little weird)
-
-
-    Can he find his way to safety, can he dodge well
-    enough, will he survive!?'
+    Torn by guilt
+    he abandons his clan and rushes back towards his home village. His frenzie takes
+    epical proportions and soon after leaving he finds himself unable to stop. The
+    only thought in his head ''i need to save my family!'''
 --- !u!222 &1429075402
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -809,7 +806,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Oh shit, here it goes!
+  m_Text: RUN!
 --- !u!222 &1959403880
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -339,7 +339,7 @@ MonoBehaviour:
     type: 3}
   ObstakelGrootPrefab: {fileID: 3389973398043461897, guid: 5cd7825051abee14c86980b65a15b814,
     type: 3}
-  SpawnRate: 20
+  SpawnRate: 22
 --- !u!4 &1294109188
 Transform:
   m_ObjectHideFlags: 0
@@ -375,7 +375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spawn1: {fileID: 1294109188}
-  OffsetSpawn1: 100
+  OffsetSpawn1: 70
   Player: {fileID: 1762403781}
 --- !u!1 &1456754288
 GameObject:

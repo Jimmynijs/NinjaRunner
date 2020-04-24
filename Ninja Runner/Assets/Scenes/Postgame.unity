@@ -420,7 +420,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -88}
+  m_AnchoredPosition: {x: 0, y: -112.5}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &647835150
@@ -613,7 +613,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.7, y: 0.7}
+  m_AnchoredPosition: {x: 0.7, y: 28.1}
   m_SizeDelta: {x: 431.03662, y: 225.90709}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1429075401
@@ -639,7 +639,7 @@ MonoBehaviour:
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -647,10 +647,29 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "After a while Larry finally slows down.\nHe is relieved to be standing
-    still again and return to his live of doing nothing. \nYou have to wander though,
-    with no arm nor legs, how did he start sliding in the first place?\n....\n\nWill
-    continue!"
+  m_Text: 'After a long and harsh journey Tsun finally returns home. But only to
+    find it burned to the ground.
+
+    In the middle of the village a note is pinned
+    on a lone standing pole.
+
+
+    Tsun,
+
+
+    We have your family
+
+    You have
+    two days before we execute them
+
+
+    Ayani clan
+
+
+    ....
+
+
+    Will continue!'
 --- !u!222 &1429075402
 CanvasRenderer:
   m_ObjectHideFlags: 0
