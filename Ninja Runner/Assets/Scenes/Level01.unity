@@ -138,6 +138,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Eind
       objectReference: {fileID: 0}
+    - target: {fileID: 7569859059762781666, guid: e7495263b7bd8924eb79d98f5696b0f2,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000,
+        type: 0}
     - target: {fileID: 7569859059762781693, guid: e7495263b7bd8924eb79d98f5696b0f2,
         type: 3}
       propertyPath: m_LocalPosition.x

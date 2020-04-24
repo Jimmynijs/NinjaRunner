@@ -5,10 +5,14 @@ public class BlokSpawner : MonoBehaviour
     public Transform Player;
 
     public Transform[] SpawnPoints;
+    public Transform[] SpawnPointsGroot;
 
     public GameObject ObstakelPrefab;
+    public GameObject ObstakelGrootPrefab;
 
-    public float StartSpawning;
+    private float StartSpawning = 10f;
+
+    [Range(20, 100)]
     public float SpawnRate;
 
 
@@ -16,15 +20,15 @@ public class BlokSpawner : MonoBehaviour
     {
         if (Player.position.z >= StartSpawning)
         {
-            Debug.Log(Player.position.z);
-            Spawners ();
+            Spawners1 ();
+            SpawnersGroot();
             StartSpawning = Player.position.z + SpawnRate;
         }
     }
 
 
 
-    void Spawners ()
+    void Spawners1 ()
     {
         int randomIndex = Random.Range(0, SpawnPoints.Length);
 
@@ -33,6 +37,19 @@ public class BlokSpawner : MonoBehaviour
             if (randomIndex == i)
             {
                 Instantiate(ObstakelPrefab, SpawnPoints[i].position, Quaternion.identity);
+            }
+        }
+    }
+
+    void SpawnersGroot()
+    {
+        int randomIndex = Random.Range(0, SpawnPointsGroot.Length);
+
+        for (int i = 0; i < SpawnPointsGroot.Length; i++)
+        {
+            if (randomIndex == i)
+            {
+                Instantiate(ObstakelGrootPrefab, SpawnPointsGroot[i].position, Quaternion.identity);
             }
         }
     }

@@ -33,7 +33,6 @@ public class Gamemanager : MonoBehaviour
         if (GameHasEnded == false)
         {
             GameHasEnded = true;
-            Debug.Log("GAME OVER!");
             Invoke ("Restart", Opnieuw);
         }
     }

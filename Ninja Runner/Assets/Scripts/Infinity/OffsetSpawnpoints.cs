@@ -3,6 +3,8 @@
 public class OffsetSpawnpoints : MonoBehaviour
 {
     public Transform Spawn1;
+
+    [Range (50, 150)]
     public float OffsetSpawn1;
     public Transform Player;
 
