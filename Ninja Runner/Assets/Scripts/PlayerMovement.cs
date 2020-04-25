@@ -1,7 +1,8 @@
 ﻿
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour
+{
 
     public Rigidbody rb;
 
@@ -13,7 +14,7 @@ public class PlayerMovement : MonoBehaviour {
     bool BewegingLinks = false;
     bool BewegingRechts = false;
     bool Spring = false;
-    bool RaaktGrond = false;   
+    bool RaaktGrond = false;
 
     void Update()
     {
@@ -47,10 +48,10 @@ public class PlayerMovement : MonoBehaviour {
 
     void FixedUpdate()
     {
-        rb.AddForce(0, 0, Speedvoren * Time.deltaTime);     
-        rb.AddForce(0, -Zwaartekracht *Time.deltaTime, 0);
+        rb.AddForce(0, 0, Speedvoren * Time.deltaTime);
+        rb.AddForce(0, -Zwaartekracht * Time.deltaTime, 0);
 
-        if (BewegingRechts == true) 
+        if (BewegingRechts == true)
         {
             rb.AddForce(Speedstuur * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
@@ -62,8 +63,9 @@ public class PlayerMovement : MonoBehaviour {
 
         if (RaaktGrond == true & Spring == true)
         {
+            FindObjectOfType<AudioManager>().Play("Spring");
             rb.AddForce(0, Springkracht * Time.deltaTime, 0, ForceMode.VelocityChange);
-        }      
+        }
     }
 
     //Checkt of de speler iets beloopbaars raakt
@@ -72,14 +74,15 @@ public class PlayerMovement : MonoBehaviour {
         if (LoopInfo.collider.tag == "Loopbaar")
         {
             RaaktGrond = true;
-        }     
+            FindObjectOfType<AudioManager>().Play("Lopen");
+        }
     }
-
     void OnCollisionExit(Collision LoopInfo)
     {
         if (LoopInfo.collider.tag == "Loopbaar")
         {
             RaaktGrond = false;
+            FindObjectOfType<AudioManager>().Stop("Lopen");
         }
     }
 

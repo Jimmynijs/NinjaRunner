@@ -12,6 +12,8 @@ public class Botsing : MonoBehaviour
         if (BotsingInfo.collider.tag == "Hindernis")
         {
             movement.enabled = false;
+            FindObjectOfType<AudioManager>().Stop("Lopen");
+            FindObjectOfType<AudioManager>().Play("Botsing");
             FindObjectOfType<Gamemanager>().EndGame();
 
         }
