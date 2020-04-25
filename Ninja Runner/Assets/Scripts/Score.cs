@@ -2,6 +2,9 @@
 using UnityEngine;
 using UnityEngine.UI; 
 
+// Regelt de score die op de UI wordt weergegeven.
+
+
 public class Score : MonoBehaviour
 {
 
@@ -11,7 +14,6 @@ public class Score : MonoBehaviour
 
     float weergave = 0f;
 
-    // Update is called once per frame
     void Update()
     {
         weergave = Eind.position.z - Player.position.z;

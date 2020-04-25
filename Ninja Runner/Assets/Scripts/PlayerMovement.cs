@@ -1,9 +1,12 @@
 ﻿
 using UnityEngine;
 
+//Hierin worden de belangrijkste dingen bijgehouden m.b.t. de speler.
+//Bijvoorbeeld De controls, of de speler de grond raakt, de krachten die op de speler werken, etc.
+
 public class PlayerMovement : MonoBehaviour
 {
-
+    //Variabelen
     public Rigidbody rb;
 
     public float Speedvoren = 2000f;
@@ -48,8 +51,8 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.AddForce(0, 0, Speedvoren * Time.deltaTime);
-        rb.AddForce(0, -Zwaartekracht * Time.deltaTime, 0);
+        rb.AddForce(0, 0, Speedvoren * Time.deltaTime);         //Kracht naar voren
+        rb.AddForce(0, -Zwaartekracht * Time.deltaTime, 0);     //Kracht naar beneden
 
         if (BewegingRechts == true)
         {

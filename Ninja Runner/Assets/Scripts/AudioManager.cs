@@ -2,6 +2,8 @@ using UnityEngine.Audio;
 using System;
 using UnityEngine;
 
+//Regelt het geluid in de game. Hierin staan de geluiden opgeslagen en hiernaar wordt gerefereert als een geluid moet worden afgespeeld.
+
 public class AudioManager : MonoBehaviour
 {
 
@@ -13,6 +15,7 @@ public class AudioManager : MonoBehaviour
 
 	void Awake()
 	{
+		//Stuk code zorgt ervoor dat geluid kan blijven spelen tussen levels. 
 		if (instance != null)
 		{
 			Destroy(gameObject);
@@ -23,6 +26,7 @@ public class AudioManager : MonoBehaviour
 			DontDestroyOnLoad(gameObject);
 		}
 
+		//Koppeld de array zoals eerder gedefinieerd aan de daadwerkelijke eisen van unity van geluid.
 		foreach (Sound s in sounds)
 		{
 			s.source = gameObject.AddComponent<AudioSource>();
@@ -33,6 +37,7 @@ public class AudioManager : MonoBehaviour
 		}
 	}
 
+	//maakt de .Play functie aan. Gebruikt om de sample te starten in de code.
 	public void Play(string sound)
 	{
 		Sound s = Array.Find(sounds, item => item.name == sound);
@@ -47,7 +52,7 @@ public class AudioManager : MonoBehaviour
 
 		s.source.Play();
 	}
-
+	//Maakt de .Stop functie aan. Gebruikt om de sample te stoppen in de code.
 	public void Stop(string sound)
 	{
 		Sound s = Array.Find(sounds, item => item.name == sound);

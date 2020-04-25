@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+//Het stuk code dat de blokken laat spawnen uit de spawners.
+
 public class BlokSpawner : MonoBehaviour
 {
     public Transform Player;
@@ -27,7 +29,7 @@ public class BlokSpawner : MonoBehaviour
     }
 
 
-
+    //Regelt kleine blokjes
     void Spawners1 ()
     {
         int randomIndex = Random.Range(0, SpawnPoints.Length);
@@ -41,6 +43,7 @@ public class BlokSpawner : MonoBehaviour
         }
     }
 
+    //Regelt grote blokjes
     void SpawnersGroot()
     {
         int randomIndex = Random.Range(0, SpawnPointsGroot.Length);

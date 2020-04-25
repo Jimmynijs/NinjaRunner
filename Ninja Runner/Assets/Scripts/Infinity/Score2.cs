@@ -2,6 +2,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+//Regels de score in het infinitylevel.
+
 public class Score2 : MonoBehaviour
 {
 

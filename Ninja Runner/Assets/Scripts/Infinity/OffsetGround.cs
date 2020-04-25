@@ -1,6 +1,8 @@
 ﻿
 using UnityEngine;
 
+//Regelt dat de grondspawner een afstand heeft tot de speler en mee beweegt met de speler.
+
 public class OffsetGround : MonoBehaviour
 {
  

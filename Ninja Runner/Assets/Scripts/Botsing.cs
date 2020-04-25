@@ -6,6 +6,9 @@ public class Botsing : MonoBehaviour
 
     public PlayerMovement movement;
 
+    //Stukje code zet de besturen van de speler uit op een botsing.
+    //Kan later ook bij PlayerMovement worden geplaatst.
+    //Ga ik later aanpassen.
 
     void OnCollisionEnter(Collision BotsingInfo) 
     {

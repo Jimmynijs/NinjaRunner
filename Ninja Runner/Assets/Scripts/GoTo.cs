@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//Dit hele script koppeld de verschillende drukknoppen van de menu's aan wat er moet gebeuren als erop gedrukt wordt.
+
 public class GoTo : MonoBehaviour
 {
 

@@ -1,6 +1,8 @@
 ﻿
 using UnityEngine;
 
+//Regelt de grondspawner.
+
 public class GrondSpawner : MonoBehaviour
 
 {

@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+//Regelt dat de spawners een afstand hebben te de speler en mee bewegen met de speler.
+
 public class OffsetSpawnpoints : MonoBehaviour
 {
     public Transform Spawn1;
