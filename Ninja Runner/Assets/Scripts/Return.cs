@@ -10,7 +10,7 @@ public class Return : MonoBehaviour
 
     public void ReturnMenu()
     {
-        Debug.Log("Return");
+        FindObjectOfType<AudioManager>().Play("Drukknop");
         SceneManager.LoadScene("Menu");
     }
 }

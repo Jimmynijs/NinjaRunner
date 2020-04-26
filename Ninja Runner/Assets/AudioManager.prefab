@@ -72,3 +72,12 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
+  - name: Drukknop
+    clip: {fileID: 8300000, guid: b77666df7d6c9b147ad64ebc647ae5c9, type: 3}
+    volume: 0.4
+    volumeVariance: 0
+    pitch: 1.06
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
