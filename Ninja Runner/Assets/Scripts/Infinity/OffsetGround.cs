@@ -9,7 +9,6 @@ public class OffsetGround : MonoBehaviour
     public Transform Player;
     public Transform SpawnGrond;
 
-
     void Start()
     {
         SpawnGrond.position = new Vector3(0, 0, Player.position.z + 1000);
@@ -17,7 +16,7 @@ public class OffsetGround : MonoBehaviour
 
     void Update()
     {
-        SpawnGrond.position = new Vector3(0, 0, Player.position.z + 1000);
+        SpawnGrond.position = new Vector3(0, 0 - 0.1f, Player.position.z + 1000);
     }
     
 }

@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         rb.AddForce(0, 0, Speedvoren * Time.deltaTime);         //Kracht naar voren
-        rb.AddForce(0, -Zwaartekracht * Time.deltaTime, 0);     //Kracht naar beneden
+        rb.AddForce(0, -Zwaartekracht * Time.deltaTime, 0, ForceMode.VelocityChange);     //Kracht naar beneden
 
         if (BewegingRechts == true)
         {
@@ -67,19 +67,11 @@ public class PlayerMovement : MonoBehaviour
         if (RaaktGrond == true & Spring == true)
         {
             FindObjectOfType<AudioManager>().Play("Spring");
-            rb.AddForce(0, Springkracht * Time.deltaTime, 0, ForceMode.VelocityChange);
+            rb.AddForce(0, Springkracht * Time.deltaTime, 0, ForceMode.Impulse);
         }
     }
 
     //Checkt of de speler iets beloopbaars raakt
-    void OnCollisionEnter(Collision LoopInfo)
-    {
-        if (LoopInfo.collider.tag == "Loopbaar")
-        {
-            RaaktGrond = true;
-            FindObjectOfType<AudioManager>().Play("Lopen");
-        }
-    }
     void OnCollisionExit(Collision LoopInfo)
     {
         if (LoopInfo.collider.tag == "Loopbaar")
@@ -88,5 +80,13 @@ public class PlayerMovement : MonoBehaviour
             FindObjectOfType<AudioManager>().Stop("Lopen");
         }
     }
-
+    void OnCollisionEnter(Collision LoopInfo)
+    {
+        if (LoopInfo.collider.tag == "Loopbaar")
+        {
+            RaaktGrond = true;
+            FindObjectOfType<AudioManager>().Play("Lopen");
+        }
+    }
+   
 }

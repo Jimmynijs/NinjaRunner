@@ -10,9 +10,9 @@ public class GrondSpawner : MonoBehaviour
 
     public Transform GrondSpawn;
 
-    public GameObject GroundPrefab;
+    public GameObject GroundinfPrefab;
 
-    private float StartSpawning = 500f;
+    private float StartSpawning = 490f;
     private float SpawnRate = 950f;
 
 
@@ -29,6 +29,6 @@ public class GrondSpawner : MonoBehaviour
 
     void GroundSpawn()
     {      
-     Instantiate(GroundPrefab, GrondSpawn.position, Quaternion.identity);   
+     Instantiate(GroundinfPrefab, GrondSpawn.position, Quaternion.identity);   
     }
 }
