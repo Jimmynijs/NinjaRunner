@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8113510033186831835}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Speler
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -127,8 +127,10 @@ MonoBehaviour:
   rb: {fileID: 7699391521938557920}
   Speedvoren: 100000
   Speedstuur: 200
-  Springkracht: 1500
-  Zwaartekracht: 40000
+  Springkracht: 7000
+  DoubleJumpKracht: 20000
+  Zwaartekracht: 100
+  DoubleJumpCount: 3
 --- !u!114 &8113510033186831835
 MonoBehaviour:
   m_ObjectHideFlags: 0

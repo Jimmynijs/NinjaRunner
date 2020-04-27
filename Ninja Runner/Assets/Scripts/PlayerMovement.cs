@@ -12,12 +12,15 @@ public class PlayerMovement : MonoBehaviour
     public float Speedvoren = 2000f;
     public float Speedstuur = 200f;
     public float Springkracht = 1000f;
+    public float DoubleJumpKracht = 1000f;
     public float Zwaartekracht = 500f;
+    public int DoubleJumpCount = 3;
 
     bool BewegingLinks = false;
     bool BewegingRechts = false;
     bool Spring = false;
     bool RaaktGrond = false;
+    bool DoubleJump = false;
 
     void Update()
     {
@@ -47,6 +50,17 @@ public class PlayerMovement : MonoBehaviour
         {
             Spring = false;
         }
+
+        if (Input.GetKeyDown("w") & RaaktGrond == false & DoubleJumpCount > 0)
+        {
+            DoubleJump = true;
+            DoubleJumpCount = DoubleJumpCount - 1;
+            Debug.Log(DoubleJumpCount);
+        }
+        else
+        {
+            DoubleJump = false;
+        }
     }
 
     void FixedUpdate()
@@ -68,6 +82,12 @@ public class PlayerMovement : MonoBehaviour
         {
             FindObjectOfType<AudioManager>().Play("Spring");
             rb.AddForce(0, Springkracht * Time.deltaTime, 0, ForceMode.Impulse);
+        }
+
+        if (DoubleJump == true)
+        {
+            FindObjectOfType<AudioManager>().Play("Spring");
+            rb.AddForce(0, DoubleJumpKracht * Time.deltaTime, 0, ForceMode.Impulse);
         }
     }
 
