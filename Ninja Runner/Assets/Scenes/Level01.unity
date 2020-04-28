@@ -3615,6 +3615,12 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 832451788}
+    - target: {fileID: 8584909791935359798, guid: 3467aedc56cfee342aa687b4729d35f2,
+        type: 3}
+      propertyPath: DoubleJumpEffect
+      value: 
+      objectReference: {fileID: 1293630020605024, guid: ea309e8646148c24ab067d84d5d22697,
+        type: 3}
     - target: {fileID: 8584909791935359799, guid: 3467aedc56cfee342aa687b4729d35f2,
         type: 3}
       propertyPath: m_LocalPosition.x
