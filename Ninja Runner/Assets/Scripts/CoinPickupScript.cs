@@ -16,7 +16,6 @@ public class CoinPickupScript : MonoBehaviour
     void PickUpCoin()
     {      
         Player.PlayerScore = Player.PlayerScore + PointOnPickup;
-        Debug.Log(Player.PlayerScore);
         FindObjectOfType<AudioManager>().Play("CoinPickup");
     }
 }
