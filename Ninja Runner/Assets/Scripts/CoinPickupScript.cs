@@ -17,5 +17,6 @@ public class CoinPickupScript : MonoBehaviour
     {      
         Player.PlayerScore = Player.PlayerScore + PointOnPickup;
         FindObjectOfType<AudioManager>().Play("CoinPickup");
+        Destroy(gameObject);
     }
 }

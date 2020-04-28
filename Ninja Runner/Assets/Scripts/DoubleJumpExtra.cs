@@ -17,5 +17,6 @@ public class DoubleJumpExtra : MonoBehaviour
     {
         FindObjectOfType<AudioManager>().Play("DoubleJumpPickup");
         player.DoubleJumpCount = player.DoubleJumpCount + ExtraJumps;
+        Destroy(gameObject);
     }
 }
