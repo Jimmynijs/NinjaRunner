@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public float DoubleJumpKracht = 1000f;
     public float Zwaartekracht = 500f;
     public int DoubleJumpCount = 0;
+    public int ShurikenCount = 0;
 
     public int PlayerScore = 0;
 

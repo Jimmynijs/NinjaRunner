@@ -99,3 +99,12 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
+  - name: ShurikenPickup
+    clip: {fileID: 8300000, guid: d0c9b36727395d642847f76631e84cde, type: 3}
+    volume: 0.709
+    volumeVariance: 0
+    pitch: 1.2
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
