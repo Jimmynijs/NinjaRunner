@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public float Springkracht = 1000f;
     public float DoubleJumpKracht = 1000f;
     public float Zwaartekracht = 500f;
-    public int DoubleJumpCount = 3;
+    public int DoubleJumpCount = 0;
 
     bool BewegingLinks = false;
     bool BewegingRechts = false;
@@ -55,7 +55,6 @@ public class PlayerMovement : MonoBehaviour
         {
             DoubleJump = true;
             DoubleJumpCount = DoubleJumpCount - 1;
-            Debug.Log(DoubleJumpCount);
         }
         else
         {

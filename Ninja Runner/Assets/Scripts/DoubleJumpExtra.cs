@@ -15,6 +15,7 @@ public class DoubleJumpExtra : MonoBehaviour
 
     void PickUp()
     {
-        Debug.Log("Opgepakt!");
+        FindObjectOfType<AudioManager>().Play("DoubleJumpPickup");
+        player.DoubleJumpCount = player.DoubleJumpCount + ExtraJumps;
     }
 }
