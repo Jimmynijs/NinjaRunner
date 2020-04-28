@@ -81,3 +81,21 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
+  - name: CoinPickup
+    clip: {fileID: 8300000, guid: f43d75bc59daefa4888c7c71eff5deb4, type: 3}
+    volume: 0.4
+    volumeVariance: 0
+    pitch: 1.31
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: DoubleJumpPickup
+    clip: {fileID: 8300000, guid: d0026a50738fdb643b2e8eaaf2bfc7f1, type: 3}
+    volume: 0.709
+    volumeVariance: 0
+    pitch: 1.2
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}

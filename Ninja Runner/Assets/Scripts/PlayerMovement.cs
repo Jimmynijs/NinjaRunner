@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
     public float Zwaartekracht = 500f;
     public int DoubleJumpCount = 0;
 
+    public int PlayerScore = 0;
+
     bool BewegingLinks = false;
     bool BewegingRechts = false;
     bool Spring = false;
