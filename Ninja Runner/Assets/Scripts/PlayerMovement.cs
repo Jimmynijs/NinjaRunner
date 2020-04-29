@@ -9,6 +9,9 @@ public class PlayerMovement : MonoBehaviour
     //Variabelen
     public Rigidbody rb;
 
+    public Transform ShurikenSpawn;
+    public GameObject ShurikenThrowPrefab;
+
     public float Speedvoren = 2000f;
     public float Speedstuur = 200f;
     public float Springkracht = 1000f;
@@ -101,6 +104,11 @@ public class PlayerMovement : MonoBehaviour
         {
             FindObjectOfType<AudioManager>().Play("Spring");
             rb.AddForce(0, DoubleJumpKracht * Time.deltaTime, 0, ForceMode.Impulse);
+        }
+
+        if (Shuriken == true)
+        {
+            Instantiate(ShurikenThrowPrefab, ShurikenSpawn.position, Quaternion.identity);
         }
     }
 
