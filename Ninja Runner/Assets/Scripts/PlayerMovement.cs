@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     bool Spring = false;
     bool RaaktGrond = false;
     bool DoubleJump = false;
+    bool Shuriken = false;
 
     void Update()
     {
@@ -62,6 +63,16 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             DoubleJump = false;
+        }
+
+        if (Input.GetKeyDown("e") & ShurikenCount >= 1)
+        {
+            Shuriken = true;
+            ShurikenCount = ShurikenCount - 1;
+        }
+        else
+        {
+            Shuriken = false;
         }
     }
 
