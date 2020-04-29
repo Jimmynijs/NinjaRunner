@@ -6,8 +6,11 @@ public class EindTrigger : MonoBehaviour
 {
     public Gamemanager Gamemanager; 
 
-    void OnTriggerEnter()
+    void OnTriggerEnter(Collider EnterInfo)
     {
-        Gamemanager.CompleteLevel();
+        if (EnterInfo.GetComponent<Collider>().tag == "Speler")
+        {
+            Gamemanager.CompleteLevel();
+        }
     }
 }
