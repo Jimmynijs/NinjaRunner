@@ -2367,7 +2367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1762403781}
-  OffsetShurikenSpawn: {x: 0, y: 0, z: 15}
+  OffsetShurikenSpawn: {x: 0, y: 0, z: 2}
 --- !u!4 &2032242589 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3241006742319592630, guid: 17922c2339562bc4eb8b7c0221766c2e,
